@@ -1,6 +1,6 @@
 [package]
 name = "versenova/goodclasses"
-version = "0.1.0"
+version = "0.1.1"
 registry = "https://github.com/UpliftGames/wally-index"
 realm = "shared"
 description = "GoodClasses is a python-inspired class encapsulation module for Luau that intends to bring powerful, python-like features to luau classes while allowing users to maintain clean type strictness."
