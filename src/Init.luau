@@ -23,8 +23,8 @@ local GoodClasses = {}
 GoodClasses.interface = {}
 
 export type PropertyConfig = {
-	readonly: boolean?,
-	hidden: boolean?,
+	readonly: boolean,
+	hidden: boolean,
 }
 
 export type Partial<t> = {[any]: any}

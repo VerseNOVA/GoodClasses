@@ -1,6 +1,32 @@
 {
   "name": "GoodClasses",
   "tree": {
-    "$path": "src"
+		"$className": "DataModel",
+    "ReplicatedStorage": {
+			"GoodClasses": {
+				"$path": "src/Init.luau"
+			},
+			"GoodClassesTestingUtils": {
+				"$path": "src/tests/utils.luau"
+			}
+		},
+		"ServerScriptService": {
+			"GoodClasses": {
+				"$className": "Folder",
+				"RunServerTests": {
+					"$path": "src/tests/server.luau"
+				}
+			}
+		},
+		"StarterPlayer": {
+			"StarterPlayerScripts": {
+				"GoodClasses": {
+					"$className": "Folder",
+					"RunClientTests": {
+						"$path": "src/tests/client.luau"
+					}
+				}
+			}
+		}
 	}
 }
