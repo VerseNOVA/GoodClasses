@@ -89,7 +89,10 @@ function GoodClasses.__new<t>(className: string, parentEnv: env<any>?): Class<t>
 
 	function class:property(name: any, default: any?, config: PropertyConfig?)
 		assert(env.methods[name] == nil, `Method {name} already exists`)
-		config = config or {}
+		config = config or {
+			readonly = false,
+			hidden = false,
+		}
 		assert(config)
 		env.schema[name] = { default = default, definedIn = env.fullClassName}
 		if config.readonly then
