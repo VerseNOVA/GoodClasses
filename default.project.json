@@ -14,7 +14,7 @@
 			"GoodClasses": {
 				"$className": "Folder",
 				"RunServerTests": {
-					"$path": "src/tests/server.luau"
+					"$path": "src/tests/server.server.luau"
 				}
 			}
 		},
@@ -23,7 +23,7 @@
 				"GoodClasses": {
 					"$className": "Folder",
 					"RunClientTests": {
-						"$path": "src/tests/client.luau"
+						"$path": "src/tests/client.client.luau"
 					}
 				}
 			}

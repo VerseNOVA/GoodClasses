@@ -34,7 +34,7 @@ function TesterUtils.Test(self: Tester, property: any, config: TestConfig?, call
 	config = config or {}
 	assert(config)
 	config.testReturn = config.testReturn or function() return true end
-	config.successExpected = config.successExpected or true
+	config.successExpected = if config.successExpected  == nil then true else config.successExpected
 
 
 	local success, response = pcall(callback, ...)

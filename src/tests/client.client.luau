@@ -27,7 +27,7 @@ TestingClass:property("hiddenProperty", nil, {
 	readonly = true,
 	hidden = true
 })
-TestingClass:method("TestingMethod", function(self: Tester, ...)
+TestingClass:method("testMethod", function(self: Tester, ...)
 	--TODO: may want to format better
 	--or make it so that it only prints failures
 	print("GoodClasses client test results:")
